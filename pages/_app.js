@@ -20,7 +20,6 @@ export default function MyApp(props) {
         <title>NFToken</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"></link>
-        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

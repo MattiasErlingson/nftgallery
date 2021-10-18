@@ -1,6 +1,5 @@
 
 .cardHolder {
-  margin: 8px;
   padding: 15px;
   background:  rgba(222,179,255,1);
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
@@ -8,7 +7,7 @@
 }
 
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.02); }
+.grow:hover { transform: scale(0.985); }
 
 .buttonGrow { transition: all .2s ease-in-out; }
 .buttonGrow:hover { transform: scale(1.2); }
@@ -30,3 +29,45 @@
     animation: rotatee 4s linear infinite;
     display:inline-block;
   }
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    margin-top: 120px;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding: 0 12px;
+}
+
+.gallery .pics {
+  padding-bottom: 15px;
+}
+
+  @media (max-width: 991px){
+      .gallery {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+          -webkit-column-width: 100%;
+          -moz-column-width: 100%;
+          column-width: 100%;
+          margin-right: 150px;
+          margin-left: 150px;
+      }
+}
+
+@media (max-width: 600px){
+  .gallery {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-width: 100%;
+      -moz-column-width: 100%;
+      column-width: 100%;
+      margin: 5px;
+  }
+}

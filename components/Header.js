@@ -11,7 +11,7 @@ const Header = () => {
     <AppBar
       position="fixed" style={{background: 'transparent', boxShadow: 'none', marginBottom: "40px"}}>
       <Toolbar sx={{justifyContent: "center", mt: "30px"}}>
-        <Typography variant="h3" component="div" sx={{color: "white", mr: {xs: "20px", sm: "100px", md: "250px", lg: "250px"}}}>
+        <Typography variant="h3" component="div" sx={{color: "white", mr: "15%"}}>
           NfToken <span><Typography variant="h5">by <span className={styles.toto}>
             <span>Emil</span>.</span></Typography></span>
         </Typography>
@@ -23,7 +23,7 @@ const Header = () => {
             startIcon={<Avatar src={'twtr.png'} color="black" />}
             className={styles.button}
             href="https://twitter.com/EmilErlingson"
-            sx={{ mr: "20px" }}
+            sx={{ mr: "10px" }}
           >
             <Typography>Twitter</Typography>
           </Button>
@@ -39,7 +39,7 @@ const Header = () => {
           </>
           : (
             <>
-              <IconButton href="https://twitter.com/EmilErlingson" sx={{ mr: "10px" }}>
+              <IconButton href="https://twitter.com/EmilErlingson">
                 <Avatar src={'os.png'} />
               </IconButton>
               <IconButton href="https://opensea.io/Emil2">
