@@ -18,17 +18,15 @@ const Header = () => {
         {isMobile ? 
         <>
         <Button
-            disableElevation="true"
             variant="contained"
             startIcon={<Avatar src={'twtr.png'} color="black" />}
             className={styles.button}
             href="https://twitter.com/EmilErlingson"
-            sx={{ mr: "10px" }}
+            sx={{ mr: "20px" }}
           >
             <Typography>Twitter</Typography>
           </Button>
           <Button
-            disableElevation="true"
             variant="contained"
             startIcon={<Avatar src={'os.png'} />}
             className={styles.button}

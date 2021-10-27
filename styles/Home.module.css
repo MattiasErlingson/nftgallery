@@ -1,6 +1,5 @@
 
 .cardHolder {
-  padding: 15px;
   background:  rgba(222,179,255,1);
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   border-radius: 20px;
@@ -10,7 +9,7 @@
 .grow:hover { transform: scale(0.985); }
 
 .buttonGrow { transition: all .2s ease-in-out; }
-.buttonGrow:hover { transform: scale(1.2); }
+.buttonGrow:hover { transform: scale(1.05); }
 
 .button {
   background: linear-gradient(90deg, rgba(207,143,255,1) 31%, rgba(166,255,156,1) 100%);
@@ -18,7 +17,7 @@
 }
 
 .button:hover {
-  transform: scale(1.05); 
+  transform: scale(1.02); 
 }
   @keyframes rotatee {
     from{transform:rotateX(0deg)}
@@ -37,14 +36,17 @@
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
     column-width: 33%;
-    margin-top: 120px;
+    margin-top: 50px;
     margin-right: 150px;
     margin-left: 150px;
+    margin-bottom: 100px;
     padding: 0 12px;
+    height: auto
 }
 
 .gallery .pics {
   padding-bottom: 15px;
+  margin: 10px;
 }
 
   @media (max-width: 991px){
@@ -68,6 +70,7 @@
       -webkit-column-width: 100%;
       -moz-column-width: 100%;
       column-width: 100%;
-      margin: 5px;
+      margin-right: 5px;
+      margin-left: 5px;
   }
 }
