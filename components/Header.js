@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Button, Avatar, IconButton } from '@mui/material'
+import { AppBar, Toolbar, Typography, Button, Avatar, Image, IconButton } from '@mui/material'
 import styles from '../styles/Home.module.css'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -11,7 +11,8 @@ const Header = () => {
     <AppBar
       position="fixed" style={{background: 'transparent', boxShadow: 'none', marginBottom: "40px"}}>
       <Toolbar sx={{justifyContent: "center", mt: "30px"}}>
-        <Typography variant="h3" component="div" sx={{color: "white", mr: "15%"}}>
+        <img src="ape.png" width="60px" height="60px"/>
+        <Typography variant="h3" component="div" sx={{color: "white", mr: "12%"}}>
           NfToken <span><Typography variant="h5">by <span className={styles.toto}>
             <span>Emil</span>.</span></Typography></span>
         </Typography>
@@ -22,7 +23,7 @@ const Header = () => {
             startIcon={<Avatar src={'twtr.png'} color="black" />}
             className={styles.button}
             href="https://twitter.com/EmilErlingson"
-            sx={{ mr: "20px" }}
+            sx={{ mr: "15px" }}
           >
             <Typography>Twitter</Typography>
           </Button>
