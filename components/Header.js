@@ -38,10 +38,10 @@ const Header = () => {
           : (
             <>
               <IconButton href="https://twitter.com/EmilErlingson">
-                <Avatar src={'os.png'} />
+                <Avatar src={'twtr.png'} />
               </IconButton>
               <IconButton href="https://opensea.io/Emil2">
-              <Avatar src={'twtr.png'} />
+              <Avatar src={'os.png'} />
               </IconButton>
 
             </>
