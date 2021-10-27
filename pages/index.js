@@ -16,7 +16,6 @@ export default function Home({nfts, nftInfo, ethValue}) {
   return (
     <body>
       <Header />
-      
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "200px"}}>
         <Typography variant="h6" sx={{color: "#f8f8f8"}}>Floor price total: { eth_value } </Typography>
         <Avatar src="eth.ico" style={{width: "25px", height: "25px"}}/>
