@@ -1,9 +1,8 @@
 import styles from '../styles/Home.module.css'
 import * as React from 'react';
-import { ImageListItem, Divider, Avatar,  ImageListItemBar, IconButton, Typography } from '@mui/material';
+import { ImageListItem, Avatar,  ImageListItemBar, IconButton, Typography } from '@mui/material';
 import { FavoriteOutlined } from '@mui/icons-material';
 import { useState } from 'react';
-
 
 
 const NftList = (props) => {

@@ -17,7 +17,7 @@ export default function MyApp(props) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>NFToken</title>
+        <title>NFToken by Emil</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"></link>
       </Head>
