@@ -65,11 +65,14 @@ export async function getStaticProps(context) {
   if (!nftInfo) {
     return {
       props: { nfts },
+      revalidate: 1,
     }
   }
 
   return {
-    props: { nfts, nftInfo, ethValue },
+    props: {
+       nfts, nftInfo, ethValue,
+      },
+    revalidate: 1,
   }
-
 }

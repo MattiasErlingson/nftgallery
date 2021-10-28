@@ -81,8 +81,8 @@ const NftList = (props) => {
                                             // TODO: Disable button on click
                                             onClick={() => {
                                                 incrementLike(index);
-                                                disableButton(index);
                                                 incrementInDB(item, likes[index] - 1);
+                                                disableButton(index);
                                             }}
                                         >
                                             <FavoriteOutlined fontSize="large" />
