@@ -92,7 +92,7 @@ const NftList = (props) => {
                                 />
                                 <Typography variant="body1">{likes[index]} likes</Typography>
                                 <div style = {{display: "flex", flexDirection: "row", alignItems: "center"}}>
-                                <Typography variant="body1">Floor price: {nftInfo[index]['collection']['stats']['floor_price']}</Typography>
+                                <Typography variant="body1">Floor price: {Math.floor(nftInfo[index]['collection']['stats']['floor_price']*100) / 100}</Typography>
                                 <Avatar src="eth.ico" style={{width: "20px", height: "20px"}}/>
                                 </div>
                             </ImageListItem>
