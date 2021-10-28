@@ -11,7 +11,7 @@ import { Typography, Avatar, Paper } from '@mui/material';
 
 export default function Home({nfts, nftInfo, ethValue}) {
 
-  const eth_value = ethValue;
+  const eth_value = Math.floor(ethValue*1000) / 1000;
 
   return (
     <body>
@@ -57,7 +57,7 @@ async function getTotalValue(nftInfo) {
 }
 
 // Change to getStaticProps?
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const nfts = await getCollectionFromDB();
   const nftInfo = await getNftInfo(nfts);
   const ethValue = await getTotalValue(nftInfo);

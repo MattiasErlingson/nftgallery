@@ -47,6 +47,7 @@ const NftList = (props) => {
         })
     }
 
+
     return (
         <div className={styles.gallery}>
             {nfts.map((item, index) => (
@@ -58,7 +59,6 @@ const NftList = (props) => {
                                     src={item.img}
                                     style={{ width: "100%" }}
                                     alt={item.title}
-                                    loading="lazy"
                                 />
                                 <ImageListItemBar
                                     sx={{ backgroundColor: "transparent", mt: "3px" }}
